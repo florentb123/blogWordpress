@@ -15,7 +15,7 @@
     <?php
     $git = get_post_meta(get_the_ID(), '_apprenants_git', true);
     $linkedin = get_post_meta(get_the_ID(), '_apprenants_linkedin', true);
-
+    the_post_thumbnail('post-thumbnail','');
     the_title("<h1>", "</h1>");
     echo "<p> git :" . $git . "</p>";
     echo "<p> linkedin :" . $linkedin . "</p>";
