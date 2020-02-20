@@ -3,7 +3,7 @@
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
-
+index.php
 wp-content/languages
 wp-content/upgrade
 wp-content/uploads
@@ -17,7 +17,7 @@ wp-includes/
 wp*.php
 readme.html
 license.txt
-index.php
+
 xmlrpc.php
 # ignore these plugins
 wp-content/plugins/hello.php
