@@ -6,7 +6,7 @@
 wp-content/
 !wp-content/mu-plugins/
 wp-content/plugins/*
-!wp-content/themes/
+!wp-content/themes/*
 wp-admin/
 wp-includes/
 wp*.php
