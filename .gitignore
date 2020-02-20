@@ -3,20 +3,20 @@
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
-
+index.php
 wp-content/languages
 wp-content/upgrade
 wp-content/uploads
 !wp-content/mu-plugins/
 wp-content/plugins/*
-!wp-content/themes/blog/
+!wp-content/themes/blog/index.php
 wp-content/*.php
 wp-admin/
 wp-includes/
 wp*.php
 readme.html
 license.txt
-index.php
+
 xmlrpc.php
 # ignore these plugins
 wp-content/plugins/hello.php
@@ -31,5 +31,3 @@ node_modules/
 *.log
 *.sql
 *.sqlite
-
-

@@ -32,5 +32,3 @@ function add_Main_Nav() {
   }
   // Hook to the init action hook, run our navigation menu function
   add_action( 'init', 'add_Main_Nav' );
-
-  
