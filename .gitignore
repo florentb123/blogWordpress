@@ -10,6 +10,8 @@ wp-content/*
 wp*
 readme.html
 license.txt
+index.php
+xmlrpc.php
 # ignore these plugins
 wp-content/plugins/hello.php
 
