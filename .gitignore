@@ -8,6 +8,7 @@ wp-content/
 wp-content/plugins/*
 !wp-content/themes/
 !wp-content/themes/style.css
+!.css
 
 wp-admin/
 wp-includes/
