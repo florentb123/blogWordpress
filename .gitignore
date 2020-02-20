@@ -3,10 +3,14 @@
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
-wp-content/
+
+wp-content/languages
+wp-content/upgrade
+wp-content/uploads
 !wp-content/mu-plugins/
 wp-content/plugins/*
-!wp-content/themes/
+!wp-content/themes/blog/
+wp-content/*.php
 wp-admin/
 wp-includes/
 wp*.php
@@ -27,3 +31,5 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+
