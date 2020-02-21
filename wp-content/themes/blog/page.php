@@ -1,30 +1,19 @@
 <?php get_header(); ?>
 <main class="wrap">
-
-  <?php
-  $args = array(
-    'post_type' => 'apprenants',
-    'posts_per_page' => 20,
-    'order' => 'DESC',
-  );
-
-  $my_query = new WP_Query($args);
-  ?>
-
-  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-    <?php
-    $git = get_post_meta(get_the_ID(), '_apprenants_git', true);
-    $linkedin = get_post_meta(get_the_ID(), '_apprenants_linkedin', true);
-    the_post_thumbnail('post-thumbnail','');
-    the_title("<h1>", "</h1>");
-    echo "<p> git :" . $git . "</p>";
-    echo "<p> linkedin :" . $linkedin . "</p>";
-
-    ?>
-  <?php endwhile; // End of the loop. 
-  ?>
-  <?php wp_reset_postdata(); ?>
-  </div>
-
+  <section class="content-area content-thin">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <article class="article-full">
+        <header>
+          <h2><?php the_title(); ?></h2>
+          By: <?php the_author(); ?>
+        </header>
+        <?php the_content(); ?>
+      </article>
+<?php endwhile; else : ?>
+      <article>
+        <p>Sorry, no page was found!</p>
+      </article>
+<?php endif; ?>
+  </section><?php get_sidebar(); ?>
 </main>
 <?php get_footer(); ?>
