@@ -88,7 +88,20 @@ Version: 1.0
     margin-bottom: 4px;
   }
 
-
+.iconGit{
+  background-image: url(./assets/images/github-image.png);
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 24px;
+}
+.iconLinkedin{
+  background-image: url(./assets/images/linkedin.png);
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 24px;
+}
   @media screen and (max-width: 800px) {
     .article-loop {
       width: 99%;

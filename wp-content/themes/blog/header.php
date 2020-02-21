@@ -5,7 +5,10 @@
    <meta charset="<?php bloginfo( 'charset' ); ?>">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+
    <?php wp_head(); ?>
+   <link rel="shortcut icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">
  </head>
  <body <?php body_class(); ?>>
    <header class="my-logo">
