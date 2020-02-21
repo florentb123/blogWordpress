@@ -4,7 +4,7 @@
   <?php
   $args = array(
     'post_type' => 'apprenants',
-    'posts_per_page' => 1,
+    'posts_per_page' => 20,
     'order' => 'DESC',
   );
 
