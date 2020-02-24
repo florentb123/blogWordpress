@@ -15,22 +15,25 @@
    <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
  </header>
  
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
+ <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbar-content">
+    <a class="navbar-brand" href="#">Navbar</a>
         <?php
         wp_nav_menu( array(
-            'theme_location' => 'menu-1', // Defined when registering the menu
-            'menu_id'        => 'primary-menu',
-            'container'      => false,
-            'depth'          => 2,
-            'menu_class'     => 'navbar-nav ml-auto',
-            'walker'         => new Bootstrap_NavWalker(), // This controls the display of the Bootstrap Navbar
-            'fallback_cb'    => 'Bootstrap_NavWalker::fallback', // For menu fallback
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
     </div>
 </nav>
+ <?php wp_nav_menu( array( 'header-menu' => 'header-menu' ) ); ?>
