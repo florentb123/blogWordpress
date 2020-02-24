@@ -152,23 +152,11 @@ function apprenants_save_meta_box_data( $post_id ){
 add_action( 'save_post_apprenants', 'apprenants_save_meta_box_data' );
 
 	function apprenants_post_thumbnails() {
-		$defaults = array(
-			'default-image'          => '',
-			'random-default'         => false,
-			'width'                  => 200,
-			'height'                 => 200,
-			'flex-height'            => false,
-			'flex-width'             => false,
-			'default-text-color'     => '',
-			'header-text'            => true,
-			'uploads'                => true,
-			'wp-head-callback'       => '',
-			'admin-head-callback'    => '',
-			'admin-preview-callback' => '',
-		);
-		add_theme_support( 'custom-header', $defaults );
+		
 		add_theme_support( 'custom-background' );
 		add_theme_support( 'custom-logo' );
 		add_theme_support( 'post-thumbnails' );
 	}
 	add_action( 'after_setup_theme', 'apprenants_post_thumbnails' );
+
+    require get_template_directory() . '/bootstrap-navwalker.php';
