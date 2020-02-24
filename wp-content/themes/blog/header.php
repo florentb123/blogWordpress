@@ -11,17 +11,15 @@
   <link rel="icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">
  </head>
  <body <?php body_class(); ?>>
-   <header class="my-logo">
-   <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
  </header>
  
- <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+ <nav class="navbar navbar-expand-md navbar-light fixed-top" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
@@ -36,4 +34,3 @@
         ?>
     </div>
 </nav>
- <?php wp_nav_menu( array( 'header-menu' => 'header-menu' ) ); ?>
