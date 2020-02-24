@@ -4,12 +4,16 @@
  * Template Name: apprenants
  */
 
-
-
  get_header(); ?>
-<main class="wrap">
 
-  <?php
+<main class="wrap">
+        
+
+  <?php while ( have_posts() ) : the_post();
+    if( has_post_thumbnail() ):
+        echo get_the_post_thumbnail();
+    endif;  
+endwhile; ;
   $args = array(
     'post_type' => 'apprenants',
     'posts_per_page' => 20,
@@ -21,7 +25,7 @@
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-
+    
   <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
     <?php
     $git = get_post_meta(get_the_ID(), '_apprenants_git', true);
