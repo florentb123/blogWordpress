@@ -171,3 +171,71 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'THEMENAME' ),
 ) );
+
+
+
+function gallery1_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Gallery 1',
+    'id' => 'gallery1',
+    'before_widget' => '',
+    'after_widget' => '',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'gallery1_widgets_init' );
+
+function gallery2_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Gallery 2',
+    'id' => 'gallery2',
+    'before_widget' => '<div class="row bg-hack h-50">',
+    'after_widget' => '</div>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'gallery2_widgets_init' );
+
+function gallery3_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Gallery 3',
+    'id' => 'gallery3',
+    'before_widget' => '<div class="row bg-hack h-50">',
+    'after_widget' => '</div>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'gallery3_widgets_init' );
+
+function gallery4_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Gallery 4',
+    'id' => 'gallery4',
+    'before_widget' => '<div class="row bg-hack h-50">',
+    'after_widget' => '</div>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'gallery4_widgets_init' );
+
+   
+function gallery5_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Gallery 5',
+    'id' => 'gallery5',
+    'before_widget' => '<div class="row bg-hack h-50">',
+    'after_widget' => '</div>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'gallery5_widgets_init' );

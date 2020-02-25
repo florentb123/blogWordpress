@@ -6,10 +6,23 @@ Description: theme wordpress acs
 Version: 1.0
 
 */
+/* header  */
 
 .padding-logo{
  padding: 30px 15px;
 }
+
+/*  gallery  */
+
+.min-width-100{
+  min-width: 100%;
+}
+.min-height-100{
+  min-height:100%
+}
+
+
+
 .iconGit{
   background-image: url(./assets/images/github-image.png);
   background-size: cover;
@@ -26,3 +39,51 @@ Version: 1.0
   height: 24px;
   width: 25px;
 }
+
+
+@media (max-width: 575.98px) { 
+  .bg-gallery2{
+    min-height: 100%;
+  }
+  .bg-gallery3{
+    min-height: 100%;
+  }
+  .bg-gallery4{
+    min-height: 100%;
+  }
+  .bg-gallery5{
+    min-height: 100%;
+  }
+
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .bg-gallery2{
+    min-height: 100%;
+  }
+  .bg-gallery3{
+    min-height: 100%;
+  }
+  .bg-gallery4{
+    min-height: 100%;
+  }
+  .bg-gallery5{
+    min-height: 100%;
+  }
+
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+
+ }
+
+@media (min-width: 1200px) { 
+
+
+ }
