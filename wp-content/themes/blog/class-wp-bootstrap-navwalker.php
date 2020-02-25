@@ -367,7 +367,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				if ( $container ) {
 					$fallback_output .= '</' . esc_attr( $container ) . '>';
 				}
-
+				
 				// If $args has 'echo' key and it's true echo, otherwise return.
 				if ( array_key_exists( 'echo', $args ) && $args['echo'] ) {
 					echo $fallback_output; // WPCS: XSS OK.
