@@ -1,11 +1,11 @@
-/*
-Theme Name: blog
-Author: A F E A
+/* nav */
 
-Description: theme wordpress acs
-Version: 1.0
 
-*/
+.z-index-nav{
+    z-index: 99999;
+}
+
+
 /* header  */
 
 .padding-logo{
@@ -20,9 +20,50 @@ Version: 1.0
 .min-height-100{
   min-height:100%
 }
+.hover:hover{
+  background-color: rgba(217, 30, 24, 0.5) ;
+
+}
+.top{
+ transform: translateY(500px);
+
+}
+.top{
+   transform: translateY(300px);
+}
+.transition{
+   transition:all .3s;
+}
 
 
+/* projet */
+.textProjet{
+  overflow-wrap: break-word;
+}
+.article-loop .justify-content-between .articles-mw{
+  max-width: 31% !important;
+}
+/* article */
+/* location */
 
+.bg-emplacement{
+  background-image: url('medias/emplacement.png');
+  background-size: cover;
+  height: 80vh;
+  background-position-x: left;
+}
+.bg-map {
+  background-image: url('medias/contact.png');
+  background-size: cover;
+  height: 80vh;
+  background-position-x: left;
+}
+.bg-white{
+   background-color:white ;
+}
+
+
+/* apprenants */
 .iconGit{
   background-image: url(./assets/images/github-image.png);
   background-size: cover;
@@ -54,7 +95,12 @@ Version: 1.0
   .bg-gallery5{
     min-height: 100%;
   }
-
+  .articles-mw{
+        max-width: 100%;
+  }
+  .article-loop .justify-content-between .articles-mw{
+    max-width: 100% !important;
+  }
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -70,20 +116,30 @@ Version: 1.0
   .bg-gallery5{
     min-height: 100%;
   }
-
+  .article-loop .justify-content-between .articles-mw{
+    max-width: 100% !important;
+  }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+  .article-loop .justify-content-between .articles-mw{
+    max-width: 49% !important;
+  }
 
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-
+  .article-loop .justify-content-between .articles-mw{
+    max-width: 31% !important;
+  }
 
  }
 
 @media (min-width: 1200px) { 
-
+  .article-loop .justify-content-between .articles-mw{
+    max-width: 31% !important;
+  }
 
  }
+
+
