@@ -1,0 +1,77 @@
+
+.bg-git{
+    background-image: url('medias/git-groupe.png');
+    background-size: cover;
+    height: 100%;
+    background-position-Y:center ;
+}
+.bg-hack{
+    
+    background-size: cover;
+}
+.vh-100{
+    height: 100vh;
+}
+.vh-20{
+    height: 30vh;
+}
+.vh-80{
+    height: 70vh;
+}
+.height-98{
+    height: 98px !important;
+}
+.z-index-nav{
+    z-index: 99999;
+}
+.nav{
+    background-color: aqua;
+}
+.top{
+    top: 13%;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-grey{
+    background-color: #F8F9F9;
+}
+.articles-mw{
+    max-width: 30%;
+}
+.box-shadow{
+    box-shadow: 5px 5px  2px 1px rgba(0, 0, 0, .2);}
+
+.mw-50{
+    max-width: 70%;
+    
+}
+.bg-emplacement{
+    background-image: url('medias/emplacement.png');
+    background-size: cover;
+    height: 80vh;
+    background-position-x: left;
+}
+.bg-map {
+    background-image: url('medias/contact.png');
+    background-size: cover;
+    height: 80vh;
+    background-position-x: left;
+}
+.bg-white{
+     background-color:white ;
+}
+.hover:hover{
+   background-color: rgba(217, 30, 24, 0.5) ;
+
+}
+.top{
+  transform: translateY(500px);
+ 
+}
+.top{
+    transform: translateY(300px);
+}
+.transition{
+    transition:all .3s;
+}
