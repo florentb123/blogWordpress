@@ -34,7 +34,21 @@
 .transition{
    transition:all .3s;
 }
-
+#gallery1 img{
+  height: 100% !important;
+}
+#gallery2 img{
+  height: 100% !important;
+}
+#gallery3 img{
+  height: 100% !important;
+}
+#gallery4 img{
+  height: 100% !important;
+}
+#gallery5 img{
+  height: 100% !important;
+}
 
 /* projet */
 .textProjet{
@@ -44,6 +58,15 @@
   max-width: 31% !important;
 }
 /* article */
+.h-40{
+  height: 40%;
+}
+.bg-articles{
+  background-size: cover;
+  max-height: 250px;
+  height: 250px;
+  background-position: center;
+}
 /* location */
 
 .bg-emplacement{
@@ -96,7 +119,8 @@
     min-height: 100%;
   }
   .articles-mw{
-        max-width: 100%;
+    max-width: 100%;
+    width: 100%;
   }
   .article-loop .justify-content-between .articles-mw{
     max-width: 100% !important;
@@ -118,12 +142,14 @@
   }
   .article-loop .justify-content-between .articles-mw{
     max-width: 100% !important;
+    width: 100%;
   }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
   .article-loop .justify-content-between .articles-mw{
     max-width: 49% !important;
+    width: 49%;
   }
 
  }
@@ -131,6 +157,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   .article-loop .justify-content-between .articles-mw{
     max-width: 31% !important;
+    width: 31%;
   }
 
  }
@@ -138,6 +165,7 @@
 @media (min-width: 1200px) { 
   .article-loop .justify-content-between .articles-mw{
     max-width: 31% !important;
+    width: 31%;
   }
 
  }
