@@ -88,6 +88,15 @@ Version: 1.0
     margin-bottom: 4px;
   }
 
+  .bg-apprenant{
+    height: 100px;
+    width: 100px;
+  }
+
+  .lien{
+    width: 50px;
+}
+
 .iconGit{
   background-image: url(./assets/images/github-image.png);
   background-size: cover;
@@ -104,10 +113,7 @@ Version: 1.0
   height: 24px;
   width: 25px;
 }
-.bg-apprenant{
-  width: 100px;
-  height: 100px;
-}
+
   @media screen and (max-width: 800px) {
     .article-loop {
       width: 99%;
