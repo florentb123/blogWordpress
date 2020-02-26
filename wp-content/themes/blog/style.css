@@ -1,15 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 /* nav */
 
 
 .z-index-nav{
-    z-index: 99999;
+   z-index: 99999;
 }
-
+.navbar-light .navbar-nav .nav-link{
+  color: black !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: black !important;
+  text-decoration: underline;
+}
 
 /* header  */
 
 .padding-logo{
- padding: 30px 15px;
+  padding: 30px 15px;
+  background-size: cover;
+}
+.text-playfaire{
+    font-family: 'Playfair Display' ;
+   
+    
+}
+.title-playfaire{
+    font-family: 'Playfair Display' ;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.vh-100{
+    height: 100vh;
 }
 
 /*  gallery  */
@@ -49,10 +72,17 @@
 #gallery5 img{
   height: 100% !important;
 }
+.border-gallery{
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
 
 /* projet */
 .textProjet{
   overflow-wrap: break-word;
+}
+.word{
+  word-break: break-all;
 }
 .article-loop .justify-content-between .articles-mw{
   max-width: 31% !important;
@@ -125,6 +155,10 @@
   .article-loop .justify-content-between .articles-mw{
     max-width: 100% !important;
   }
+  .border-gallery{
+    border-bottom: none;
+    border-left: none;
+  }
  }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -144,6 +178,14 @@
     max-width: 100% !important;
     width: 100%;
   }
+  .img-sm{
+    height: 250px;
+    width: 100%;
+  }
+  .border-gallery{
+    border-bottom: none;
+    border-left: none;
+  }
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -151,7 +193,10 @@
     max-width: 49% !important;
     width: 49%;
   }
-
+  .border-gallery{
+    border-bottom: none;
+    border-left: none;
+  }
  }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -159,7 +204,6 @@
     max-width: 31% !important;
     width: 31%;
   }
-
  }
 
 @media (min-width: 1200px) { 

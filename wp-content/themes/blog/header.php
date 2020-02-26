@@ -24,7 +24,7 @@
                     'theme_location'    => 'primary',
                     'depth'             => 2,
                     'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
+                    'container_class'   => 'collapse navbar-collapse text-playfaire',
                     'container_id'      => 'bs-example-navbar-collapse-1',
                     'menu_class'        => 'nav navbar-nav w-100 justify-content-end',
                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
