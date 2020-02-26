@@ -5,7 +5,7 @@
    <meta charset="<?php bloginfo( 'charset' ); ?>">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
    <?php wp_head(); ?>
    <link rel="shortcut icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">
   <link rel="icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">

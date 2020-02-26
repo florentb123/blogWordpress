@@ -197,7 +197,7 @@ function gallery2_widgets_init() {
     'name' 			=> 'Gallery 2',
 	'id' 			=> 'gallery2',
 	'class' 		=> 'h-100',
-    'before_widget' => '<div class="row bg-hack h-50 border-gallery">',
+    'before_widget' => '<div class="row overflow-hidden bg-hack h-50 border-gallery">',
     'after_widget' 	=> '</div>',
     ) );
    }
@@ -211,7 +211,7 @@ function gallery3_widgets_init() {
     'name' 			=> 'Gallery 3',
 	'id' 			=> 'gallery3',
 	'class' 		=> 'h-100',
-    'before_widget' => '<div class="row bg-hack h-50 border-gallery">',
+    'before_widget' => '<div class="row overflow-hidden bg-hack h-50 border-gallery">',
     'after_widget' 	=> '</div>',
     ) );
    }
@@ -225,7 +225,7 @@ function gallery4_widgets_init() {
     'name' 			=> 'Gallery 4',
 	'id' 			=> 'gallery4',
 	'class' 		=> 'h-100',
-    'before_widget' => '<div class="row bg-hack h-50 border-gallery">',
+    'before_widget' => '<div class="row overflow-hidden bg-hack h-50 border-gallery">',
     'after_widget' 	=> '</div>',
     ) );
    }
@@ -240,7 +240,7 @@ function gallery5_widgets_init() {
     'name' 			=> 'Gallery 5',
 	'id' 			=> 'gallery5',
 	'class' 		=> '',
-    'before_widget' => '<div class="row bg-hack h-50 border-gallery">',
+    'before_widget' => '<div class="row overflow-hidden bg-hack h-50 border-gallery">',
     'after_widget' 	=> '</div>',
     ) );
    }
