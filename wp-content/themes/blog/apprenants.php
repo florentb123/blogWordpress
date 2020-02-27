@@ -30,7 +30,7 @@ endwhile; ;
     $git = get_post_meta(get_the_ID(), '_apprenants_git', true);
     $linkedin = get_post_meta(get_the_ID(), '_apprenants_linkedin', true);
     ?>
-      <div class="col-3 my-4 text-center">
+      <div class="col-sm-12 col-md-3 col-lg-3 my-4 text-center">
         <div class=""><?php the_post_thumbnail('post-thumbnail',array('class'=>'bg-apprenant')); ?></div>
         <?php the_title("<h5 >", "</h5>"); ?>
         <div class="d-flex justify-content-center">
