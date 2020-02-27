@@ -27,11 +27,9 @@
                   <div class="bg-white articles-mw p-0 Regular shadow mb-5">
                     <header>
                       <a href="<?php the_permalink(); ?>"><div class="bg-articles " style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>)"></div></a>
-                      <h2 class="w-75 m-auto py-3 text-center title-playfaire ">
+                      <h2 class="w-75 m-auto py-4 text-center title-playfaire ">
                         <a  href="<?php the_permalink(); ?>" class="text-body" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                       </h2>
-                    
-                    <?php echo '<p class="w-75 m-auto pb-5 textProjet text-playfaire ">'.get_the_excerpt().'</p>' ?>
                     </header>
                   </div>
                 
@@ -44,7 +42,7 @@
       <?php else : ?>
       
         <article>
-          <p >Sorry, no posts were found!</p>
+          <p >Désolé, il n'y a aucun projet !</p>
         </article>
       <?php endif; ?>
 
@@ -64,7 +62,7 @@
                   <div class="bg-white articles-mw p-0 Regular shadow mb-5">
                     <header>
                       <a href="<?php the_permalink(); ?>"><div class="bg-articles" style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>)"></div></a>
-                      <h2 class="w-75 m-auto py-3 text-center title-playfaire">
+                      <h2 class="w-75 m-auto py-4 text-center title-playfaire">
                         <a  href="<?php the_permalink(); ?>" class="text-body" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                       </h2>
                     
@@ -81,6 +79,6 @@
       <?php else : ?>
       
         <article>
-          <p >Sorry, no posts were found!</p>
+          <p >Désolé, il n'y a aucun article !</p>
         </article>
       <?php endif; ?>

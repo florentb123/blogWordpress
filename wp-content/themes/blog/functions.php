@@ -23,7 +23,7 @@ function add_widget_Support() {
     ) );
 }
 // Hook the widget initiation and run our function
-add_action( 'widgets_init', 'add_Widget_Support' );
+add_action( 'widgets_init', 'add_widget_Support' );
 
 
 // Register a new navigation menu

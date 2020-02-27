@@ -13,7 +13,7 @@
  <body <?php body_class(); ?>>
  <header>
     <nav class="navbar navbar-expand-md navbar-light bg-white" role="navigation">
-        <div class="container">
+        <div class="container d-flex justify-content-end"">
             <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

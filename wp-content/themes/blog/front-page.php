@@ -2,9 +2,9 @@
   <main class="wrap">
     <section class="content-area content-thin">
       <div class="container-fluid divGallery">
-        <div class="row overflow-hidden">
+        <div class="row ">
           <?php if (is_active_sidebar('gallery1')) : ?>
-            <div id="gallery1" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0" >
+            <div id="gallery1" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 overflow-hidden" >
             <?php dynamic_sidebar('gallery1'); 
            
             ?>
@@ -45,7 +45,7 @@
               <div id="map">
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 px-0">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0">
               <div class="bg-emplacement">
                 <div class="text-white bg-text  d-flex flex-column justify-content-end">
                   <p class="ml-5 mt-5 text-uppercase">access code school</p>

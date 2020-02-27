@@ -36,8 +36,6 @@
                   <h2 class="w-75 m-auto py-3 text-center title-playfaire ">
                     <a  href="<?php the_permalink(); ?>" class="text-body" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                   </h2>
-                
-                <?php echo '<p class="w-75 m-auto pb-5 textProjet text-playfaire ">'.get_the_excerpt().'</p>' ?>
                 </header>
               </div>
             

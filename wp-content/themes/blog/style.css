@@ -8,7 +8,9 @@
 }
 .navbar-light .navbar-nav .nav-link{
   color: black !important;
+  text-align: center;
   text-transform: uppercase;
+  padding: 1rem;
 }
 .navbar-light .navbar-nav .nav-link:hover{
   color: black !important;
