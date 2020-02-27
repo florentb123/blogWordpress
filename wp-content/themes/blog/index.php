@@ -1,90 +1,66 @@
 <?php get_header(); ?>
-<main class="wrap">
-  <div class="content-area content-thin">
+  <main class="wrap">
+    <section class="content-area content-thin">
+      <div class="container-fluid divGallery">
+        <div class="row ">
+          <?php if (is_active_sidebar('gallery1')) : ?>
+            <div id="gallery1" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 overflow-hidden" >
+            <?php dynamic_sidebar('gallery1'); 
+           
+            ?>
 
-    <section>
-      <h2>Derniers articles</h2>
+            </div>
+          <?php endif; ?>
 
-      <?php
-      $recentPosts = new WP_Query();
-      $recentPosts->query('showposts=3');
-      ?>
-      <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-
-        <!-- Ce qui suit teste si l'Article en cours est dans la Catégorie 3. -->
-        <!-- Si c'est le cas, le bloc div reçoit la classe CSS "post-cat-three". -->
-        <!-- Sinon, le bloc div reçoit la classe CSS "post". -->
-
-        <div class="entry">
-          <!-- Affiche le Titre en tant que lien vers le Permalien de l'Article. -->
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-
-
-          <!-- Affiche le corps (Content) de l'Article dans un bloc div. -->
-
-
-          <?php
-          the_post_thumbnail();
-          /*
-   Affiche les 20 premiers caracters de l'article (nbre de caractere defini dans functions.php)
-   **/
-          the_excerpt();
-
-          /**
-           * affiche l'article en entier
-           */
-          //the_content(); 
-          ?>
+          <?php if (is_active_sidebar('gallery2')) : ?>
+            <div id="gallery2" class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <?php dynamic_sidebar('gallery2'); ?>
+            
+          <?php endif; ?>
+          
+          <?php if (is_active_sidebar('gallery3')) : ?>
+            <?php dynamic_sidebar('gallery3'); ?>
+            </div>
+          <?php endif; ?>
+          
+          <?php if (is_active_sidebar('gallery4')) : ?>
+            <div id="gallery4" class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <?php dynamic_sidebar('gallery4'); ?>
+            
+          <?php endif; ?>
+          
+          <?php if (is_active_sidebar('gallery5')) : ?>
+            <?php dynamic_sidebar('gallery5'); ?>
+            </div>
+          <?php endif; ?>
         </div>
-
-        <!-- Affiche une liste des Catégories des Articles séparées par des virgules. -->
-        <p class="postmetadata">Posted in <?php the_category(', '); ?></p>
-  </div> <!-- Fin du premier bloc div -->
-
-  <!-- Fin de La Boucle (mais notez le "else:" - voir la suite). -->
-
-
-
-
-<?php endwhile; ?>
-</section>
-<section>
-  <h3>Projets</h3>
-
-  <?php
-  $args = array(
-    'post_type' => 'projets',
-
-  );
-
-  $featured_query = new WP_Query($args);
-
-  // limit 3 derniers projets
-  $featured_query->set('posts_per_page', 3);
-  $featured_query->query($featured_query->query_vars);
-  // var_dump($featured_query);
-  while ($featured_query->have_posts()) : $featured_query->the_post();
-
-    $url =  get_post_meta(get_the_ID(), '_url_projet', true);
-    $projet =  get_post_meta(get_the_ID(), '_projets_description', true);
-
-
-    the_title();
-    echo '<br>';
-    the_post_thumbnail();
-    echo '<br>';
-    echo $projet;
-    echo '<br>';
-    echo $url;
-    echo '<br>';
-    echo '<br>';
-  endwhile;
-
-  ?>
-</section>
-
-</div><?php get_sidebar(); ?>
-
-</main>
+      </div>
+      <?php get_template_part('content','') ?>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0">
+              <div id="map">
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0">
+              <div class="bg-emplacement">
+                <div class="text-white bg-text  d-flex flex-column justify-content-end">
+                  <p class="ml-5 mt-5 text-uppercase">access code school</p>
+                  <p class="ml-5">Vesoul</p>
+                  <p class="ml-5">19 rue du praley</p>
+                  <p class="ml-5">70000 Vesoul</p>
+                  <p class="ml-5">03 84 79 90 80</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/map.js"></script>
 <?php get_footer(); ?>
