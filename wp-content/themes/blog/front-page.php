@@ -46,7 +46,15 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 px-0">
-              <div class="bg-emplacement"></div>
+              <div class="bg-emplacement">
+                <div class="text-white bg-text  d-flex flex-column justify-content-end">
+                  <p class="ml-5 mt-5 text-uppercase">access code school</p>
+                  <p class="ml-5">Vesoul</p>
+                  <p class="ml-5">19 rue du praley</p>
+                  <p class="ml-5">70000 Vesoul</p>
+                  <p class="ml-5">03 84 79 90 80</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
