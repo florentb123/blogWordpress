@@ -11,7 +11,7 @@
   <link rel="icon" href="wp-content/themes/blog/favicon.ico" type="image/x-icon">
  </head>
  <body <?php body_class(); ?>>
- <header>
+ <header class="bg-white ">
     <nav class="navbar navbar-expand-md navbar-light bg-white" role="navigation">
         <div class="container d-flex justify-content-end"">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,10 +33,11 @@
                 ?>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
+    <div class="container ">
+        <div class="row ">
             <div class="col-12 text-center padding-logo">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/logoGit.png" alt="logo de la promotion des gitBreakers" width="350px" />
+            <img class="img-fluid " src="<?php echo get_template_directory_uri(); ?>/assets/images/logoGit.png" alt="logo de la promotion des gitBreakers" width="350px" />
             </div>
         </div>
     </div>
+ </header>
