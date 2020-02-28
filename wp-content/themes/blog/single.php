@@ -13,7 +13,7 @@
             <div class="col-12">
            
             </div>
-            <div class="col-10 col-md-12  text-left mt-5 ml-5 ">
+            <div class="col-10 text-left mt-5 mx-auto textProjet">
 
           <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
