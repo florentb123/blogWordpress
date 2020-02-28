@@ -13,7 +13,7 @@
             <div class="col-12">
            
             </div>
-            <div class="col-10 col-md-12 offset-1  text-left mt-5 ml-5 ">
+            <div class="col-10 col-md-12  text-left mt-5 ml-5 ">
 
           <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
@@ -24,7 +24,7 @@
       </article>
 <?php endwhile; else : ?>
       <article>
-        <p>Sorry, no post was found!</p>
+        <p>Il n'y a aucun post ici</p>
       </article>
 <?php endif; ?>
   </section>

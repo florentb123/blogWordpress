@@ -43,7 +43,7 @@
   <?php else : ?>
   
     <article>
-      <p >Sorry, no posts were found!</p>
+      <p >Désolé, il n'y a aucun article !</p>
     </article>
   <?php endif; ?>
 

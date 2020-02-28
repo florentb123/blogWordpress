@@ -26,9 +26,9 @@
                 
                   <div class="bg-white articles-mw p-0 Regular shadow mb-5">
                     <header>
-                      <a href="<?php the_permalink(); ?>"><div class="bg-articles " style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>)"></div></a>
+                      <a href="<?php echo $url; ?>" target="_blank"><div class="bg-articles " style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>)"></div></a>
                       <h2 class="w-75 m-auto py-4 text-center title-playfaire ">
-                        <a  href="<?php the_permalink(); ?>" class="text-body" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                        <a  href="<?php echo $url; ?>" target="_blank" class="text-body" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                       </h2>
                     </header>
                   </div>

@@ -15,7 +15,7 @@
       </article>
 <?php endwhile; else : ?>
       <article>
-        <p>Sorry, no page was found!</p>
+        <p>Désolé il n'y a aucun apprenant !</p>
       </article>
 <?php endif; ?>
   </section><?php get_sidebar(); ?>
